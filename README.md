@@ -1,5 +1,15 @@
-# hump-dom
+# Wyrd
 
-This repository contains very elementary virtualdom (or rather [snabbdom](https://github.com/paldepind/snabbdom)) bindings
-for [bucklescript](https://github.com/bloomberg/bucklescript). At this point this should be considered as a learning exercise
-and not much more.
+Version: pre-α
+
+Elm architecture implementation for [bucklescript](https://github.com/bloomberg/bucklescript) with [inferno](https://github.com/infernojs/inferno) as a virtual dom engine.
+
+## TODO
+
+[ ] integrate TyXML
+[ ] support effects
+[ ] make everything nice
+[ ] add examples
+[ ] add tests
+[ ] publish
+[ ] add benchmarks

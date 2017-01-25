@@ -1,22 +1,12 @@
-var path = require("path");
-var webpack = require("webpack");
+var path = require('path')
 
 var cfg = {
-  devtool: "source-map",
-  entry: "./main_entry.js",
+  devtool: 'source-map',
+  entry: './lib/js/src/main_entry.js',
   output: {
-    path: path.join(__dirname, "public"),
-    filename: "bundle.js"
-  },
-  module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "source-map-loader"
-      }
-    ]
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js'
   }
-};
+}
 
-module.exports = cfg;
+module.exports = cfg

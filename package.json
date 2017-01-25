@@ -1,13 +1,16 @@
 {
   "dependencies": {
-    "bs-platform": "1.0.1",
-    "snabbdom": "^0.5.1"
+    "bs-platform": "^1.4.1",
+    "inferno": "^1.2.2",
+    "inferno-hyperscript": "^1.2.2"
   },
   "scripts": {
-    "build": "./build.sh && node node_modules/webpack/bin/webpack.js"
+    "build": "bsb && webpack",
+    "prod": "bsb && webpack -p",
+    "watch": "bsb -w & webpack -w & wait"
   },
   "devDependencies": {
-    "source-map-loader": "^0.1.5",
-    "webpack": "^1.13.2"
+    "source-map-loader": "^0.1.6",
+    "webpack": "^1.14.0"
   }
 }
